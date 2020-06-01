@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><!-- escribe html:5 con emmet instaldo para estructura basica-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: blanchedalmond;
+            column-width: 400px;
+        }
+        
+    </style>
+    <title>Dibujando con canvas</title>
+</head>
+<body >
+    <h1>Dibujo en canvas</h1>
+    <p>Cuantas lineas <br>quieres<!--br salkto de linea sencilo-->
+        <input type="text" id="texto_lineas"/> <!-- es opcional poner / al final -->
+        <!-- comienza checkbox -->
+        <select name="seleccionColores" id="colores" >
+        <option value="red">Rojo</option>
+        <option value="yellow">Amarillo</option>
+        <option value="pink">Rosa</option>
+       </select>
+       <!-- termina checkbox -->
+        <input type="button" value="a darle" id="botoncito"><!-- la etiqueta input solo tiene atributos, el value="" es para poner texto al boton-->
+        <!-- <input type="number"> numero--> 
+    </p>
+    <!-- canvas posee valores por defecto -->
+    <canvas width="300" height="300" id="dibujito"> <!-- width es ancho, height es alto, id es identificador unico-->
+    </canvas>
+    <p>Asi queda tu canvas</p>
+    <script src="dibujo.js"></script> <!-- el codigo javascript se coloca antes que el body se cierre y despues que todo lo anteior se coloque-->
+</body>
+</html>
+<!-- 
+ID es el identificador con el que podemos encontrar etiquetas con JavaScript,
+los nombres siguen las mismas reglas que las variables
+
+Puedes obtener un elemento con su id buscándolo con document.getElementById(\'nombre_id\'); -->
